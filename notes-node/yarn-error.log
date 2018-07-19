@@ -1,0 +1,40 @@
+Arguments: 
+  /usr/bin/node /usr/local/bin/yarn add yargs
+
+PATH: 
+  /home/isaac/bin:/home/isaac/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/isaac/.config/composer/vendor/bin/:/home/isaac/.config/composer/vendor/bin/
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  9.11.2
+
+Platform: 
+  linux x64
+
+npm manifest: 
+  {
+    "name": "notes-node",
+    "version": "1.0.0",
+    "description": "Note taking app",
+    "main": "app.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Isaac Rowell",
+    "license": "ISC",
+    "dependencies": {
+      "lodash": "^4.17.10",
+      "npm": "^6.1.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: EACCES: permission denied, unlink '/home/isaac/github/NodeCourse/notes-node/node_modules/npm/package.json'
