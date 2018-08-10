@@ -9,14 +9,11 @@
 </head>
 
 <body>
-    <h1>{{pageTitle}}</h1>
-    <p>This is a home page</p>
-    <p>{{welcomeMessage}}</p>
-    <footer>
-        <p>
-            Copyright {{currentYear}}
-        </p>
-    </footer>
+    {{> header}}
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <p>{{screamIt welcomeMessage}}</p>
+    {{> footer}}
 </body>
 
 </html>
