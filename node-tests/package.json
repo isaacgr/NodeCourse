@@ -11,6 +11,7 @@
     "mocha": "^5.2.0"
   },
   "dependencies": {
-    "expect": "1.20.2"
+    "expect": "1.20.2",
+    "express": "^4.16.3"
   }
 }

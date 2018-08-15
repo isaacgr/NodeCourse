@@ -8,11 +8,29 @@ it("should add two numbers", () => {
     .toBeA("number");
 });
 
+it("should async add two numbers", done => {
+  utils.asyncAdd(3, 4, sum => {
+    expect(sum)
+      .toBe(7)
+      .toBeA("number");
+    done();
+  });
+});
+
 it("should square a number", () => {
   const result = utils.square(7);
   expect(result)
     .toBe(49)
     .toBeA("number");
+});
+
+it("should async square a number", done => {
+  utils.asyncSquare(3, square => {
+    expect(square)
+      .toBe(9)
+      .toBeA("number");
+  });
+  done();
 });
 
 it("should verify first and last names are set", () => {
