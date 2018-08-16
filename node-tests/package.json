@@ -5,10 +5,11 @@
   "license": "MIT",
   "scripts": {
     "test": "mocha **/*.test.js",
-    "test-watch": "nodemon --exec \"npm test\" "
+    "test-watch": "yarn test -- --watch"
   },
   "devDependencies": {
-    "mocha": "^5.2.0"
+    "mocha": "^5.2.0",
+    "supertest": "^3.1.0"
   },
   "dependencies": {
     "expect": "1.20.2",
